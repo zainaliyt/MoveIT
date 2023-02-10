@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/ico" href="logo.ico">
+        <meta charset="UTF-8">
+        <meta name="description" content="MoveIT, ease file moving with this awesome desktop application.">
+        <meta name="keywords" content="MoveIT,Move, IT, Python, Pyqt5">
+        <meta name="author" content="Zain Ali">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>MoveIT</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1>MoveIT</h1>
+						<p>
+							Ease file moving with the help of MoveIT.<br>MoveIT is a desktop application fully created <br>with Python and PyQt5 framework.
+						</p><span style="background:lightblue;color:#585772;font-size:19px;" class="intro-text">Simple, Powerful and Suprising.</span>
+					</div>
+					<div class="cta">
+						<button class="cta-select" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="start()">How does it work?</button>
+						<button class="cta-download" ><a href="MoveITInstaller.exe" style="text-decoration:none;color:white;" download>Download</a></button>
+					</div>
+				</div>
+				<div class="cover">
+					<img src="MoveITimage.PNG" alt="MoveIT" />
+				</div>
+			</section>
+        </main>
+        <!-- Trigger the modal with a button -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <video id="guidevideo" controls autoplay loop>
+  <source src="guidevideomkv">
+  Your browser does not support the video tag.
+</video>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+  
+
+<script>
+function start(){
+    var x = document.getElementById("#guidevideo").autoplay;
+}
+   $('body').on('hidden.bs.modal', '.modal', function () {
+$('video').trigger('pause');
+});
+    
+
+
+</script>
+	</body>
+</html>
